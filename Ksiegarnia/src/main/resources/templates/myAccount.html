@@ -23,13 +23,86 @@
 			style="margin-top: -75px;" />
 
 
-		<div class="row" style="margin-top:50px;">
+		<div class="row" style="margin-top: 50px;">
 			<div class="col-xs-9 col-xs-offset-3">
 				<ul class="nav nav-tabs">
-					<li><a href="#">Utwórz nowe konto</a></li>
-					<li><a href="#">Zaloguj</a></li>
-					<li><a href="#">Przypomnij hasło</a></li>
+					<li><a href="#tab-1" data-toggle="tab">Utwórz nowe konto</a></li>
+					<li><a href="#tab-2" data-toggle="tab">Zaloguj</a></li>
+					<li><a href="#tab-3" data-toggle="tab">Przypomnij hasło</a></li>
 				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade" role="tabpanel" id="tab-1">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">* Nazwa użytkownika </label> <input
+												class="form-control" type="text" required="required"
+												id="newUsername" name="username" />
+											<p>Podaj nazwę użytkownika</p>
+										</div>
+
+										<div class="form-group">
+											<label for="email">* Email </label> <input
+												class="form-control" type="text" required="required"
+												id="email" name="email" />
+											<p>Podaj adres email</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Utwórz
+											nowego użytkownika</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="tab-pane fade" role="tabpanel" id="tab-2">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">* Nazwa użytkownika </label> <input
+												class="form-control" type="text" required="required"
+												id="newUsername" name="username" />
+											<p>Podaj nazwę użytkownika</p>
+										</div>
+
+										<div class="form-group">
+											<label for="password">* Hasło </label> <input
+												class="form-control" type="password" required="required"
+												id="password" name="password" />
+											<p>Podaj hasło</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Zaloguj</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" role="tabpanel" id="tab-3">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="recoverEmail">* Email </label> <input
+												class="form-control" type="text" required="required"
+												id="recoverEmail" name="email" />
+											<p>Podaj zarejestrowany adres email</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Wyślij</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
