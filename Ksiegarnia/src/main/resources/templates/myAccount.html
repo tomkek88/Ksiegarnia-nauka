@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common :: common-head"></head>
+
+
+<body>
+	<div th:replace="common :: common-navbar"></div>
+
+
+	<!-- Container -->
+	<div class="container">
+
+		<div class="row" style="margin-top: -100px">
+			<div class="col-xs-8">
+				<h2 class="section-headline">
+					<span>Konto użytkownika</span>
+				</h2>
+			</div>
+			<div class="col-xs-4">
+				<img th:src="@{/images/logo.png}" class="img-responsive" />
+			</div>
+		</div>
+		<hr
+			style="height: 6px; margin-top: -80px; width: 100%; position: absolute; z-index: -1;" />
+		<img th:src="@{/images/wood.png}" class="img-responsive" />
+
+		<div class="row" style="margin-top:120px;">
+			<div class="col-xs-9 col-xs-offset-3">
+				<ul class="nav nav-tabs">
+					<li role="presentation"><a href="#tab-1">Create new account</a></li>
+					<li role="presentation"><a href="#tab-2">Log in</a></li>
+					<li role="presentation"><a href="#tab-3">Forget password</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- End of Container -->
+	<div th:replace="common :: body-bottom-scripts"></div>
+</body>
+</html>

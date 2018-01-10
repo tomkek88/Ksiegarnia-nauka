@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<head th:replace="common :: common-head"></head>
 
-
-<title>Navbar Template for Bootstrap</title>
-
-<!-- Bootstrap core CSS -->
-<link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
-<link th:href="@{/css/styles.css}" rel="stylesheet" />
-<link th:href="@{/images/apple-touch-icon.png}" rel="icon" />
-
-</head>
 
 <body>
 	<div th:replace="common :: common-navbar"></div>

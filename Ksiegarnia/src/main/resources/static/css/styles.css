@@ -1,6 +1,6 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .container {
@@ -8,7 +8,7 @@ body {
 }
 
 .navbar {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .box {
@@ -29,10 +29,23 @@ hr {
 	margin: auto;
 	text-align: center;
 	margin-top: -13px;
-	 
 }
 
 .home-headline span {
+	background-color: #231F20;
+	padding: 5px 20px;
+}
+
+.section-headline {
+	font-family: "Times New Roman", Times, Serif;
+	font-size: 24px;
+	color: #fff;
+	margin: auto;
+	text-align: center;
+	margin-top: 75px;
+}
+
+.section-headline span {
 	background-color: #231F20;
 	padding: 5px 20px;
 }
