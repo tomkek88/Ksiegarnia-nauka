@@ -11,7 +11,10 @@ public class HomeController {
 		return "index";
 	}
 	
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/master
 	@RequestMapping("/myAccount")
 	public String myAccount() {
 		return "myAccount";
