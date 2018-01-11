@@ -10,11 +10,7 @@ public class HomeController {
 	public String Home() {
 		return "index";
 	}
-	
-<<<<<<< HEAD
 
-=======
->>>>>>> refs/remotes/origin/master
 	@RequestMapping("/myAccount")
 	public String myAccount() {
 		return "myAccount";
