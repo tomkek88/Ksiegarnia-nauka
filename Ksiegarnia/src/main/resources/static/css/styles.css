@@ -36,13 +36,17 @@ hr {
 	padding: 5px 20px;
 }
 
+
+
+
 .section-headline {
 	font-family: "Times New Roman", Times, Serif;
 	font-size: 24px;
 	color: #fff;
 	margin: auto;
 	text-align: center;
-	margin-top: 75px;
+	margin-top: 45px;
+	 
 }
 
 .section-headline span {

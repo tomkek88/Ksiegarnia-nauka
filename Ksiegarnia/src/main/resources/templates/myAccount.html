@@ -1,16 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="common :: common-head"></head>
 
-
 <body>
 	<div th:replace="common :: common-navbar"></div>
 
-
-	<!-- Container -->
 	<div class="container">
 
-		<div class="row" style="margin-top: -100px">
+		<div class="row" style="margin-bottom: -100px;">
 			<div class="col-xs-8">
 				<h2 class="section-headline">
 					<span>Konto użytkownika</span>
@@ -21,22 +19,98 @@
 			</div>
 		</div>
 		<hr
-			style="height: 6px; margin-top: -80px; width: 100%; position: absolute; z-index: -1;" />
-		<img th:src="@{/images/wood.png}" class="img-responsive" />
+			style="height: 6px; width: 100%; position: absolute; margin-top: -80px; z-index: -1;" />
+		<img th:src="@{/images/wood.png}" class="img-responsive"
+			style="margin-top: -75px;" />
 
-		<div class="row" style="margin-top:120px;">
+
+		<div class="row" style="margin-top: 50px;">
 			<div class="col-xs-9 col-xs-offset-3">
 				<ul class="nav nav-tabs">
-					<li role="presentation"><a href="#tab-1">Create new account</a></li>
-					<li role="presentation"><a href="#tab-2">Log in</a></li>
-					<li role="presentation"><a href="#tab-3">Forget password</a></li>
+					<li><a href="#tab-1" data-toggle="tab">Utwórz nowe konto</a></li>
+					<li><a href="#tab-2" data-toggle="tab">Zaloguj</a></li>
+					<li><a href="#tab-3" data-toggle="tab">Przypomnij hasło</a></li>
 				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade" role="tabpanel" id="tab-1">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">* Nazwa użytkownika </label> <input
+												class="form-control" type="text" required="required"
+												id="newUsername" name="username" />
+											<p>Podaj nazwę użytkownika</p>
+										</div>
+
+										<div class="form-group">
+											<label for="email">* Email </label> <input
+												class="form-control" type="text" required="required"
+												id="email" name="email" />
+											<p>Podaj adres email</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Utwórz
+											nowego użytkownika</button>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="tab-pane fade" role="tabpanel" id="tab-2">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="newUsername">* Nazwa użytkownika </label> <input
+												class="form-control" type="text" required="required"
+												id="newUsername" name="username" />
+											<p>Podaj nazwę użytkownika</p>
+										</div>
+
+										<div class="form-group">
+											<label for="password">* Hasło </label> <input
+												class="form-control" type="password" required="required"
+												id="password" name="password" />
+											<p>Podaj hasło</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Zaloguj</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" role="tabpanel" id="tab-3">
+						<div class="panel-group" style="margin-top: 20px;">
+							<div class="panel panel-default">
+								<div class="panel-body">
+									<form>
+										<div class="form-group">
+											<label for="recoverEmail">* Email </label> <input
+												class="form-control" type="text" required="required"
+												id="recoverEmail" name="email" />
+											<p>Podaj zarejestrowany adres email</p>
+										</div>
+
+										<button type="submit" class="btn btn-primary">Wyślij</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-
 	</div>
-	<!-- End of Container -->
+
+
+
 	<div th:replace="common :: body-bottom-scripts"></div>
 </body>
 </html>
